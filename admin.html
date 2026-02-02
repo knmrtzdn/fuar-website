@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - EXPOCRAFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">EXPO<span>CRAFT</span></div>
+            <div class="admin-title">Admin Panel</div>
+            
+            <nav class="admin-nav">
+                <a href="#" class="nav-item active" data-section="dashboard">
+                    <span class="icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item" data-section="hero">
+                    <span class="icon">🎨</span>
+                    Ana Sayfa Hero
+                </a>
+                <a href="#" class="nav-item" data-section="about">
+                    <span class="icon">ℹ️</span>
+                    Hakkımızda
+                </a>
+                <a href="#" class="nav-item" data-section="services">
+                    <span class="icon">🔧</span>
+                    Hizmetler
+                </a>
+                <a href="#" class="nav-item" data-section="portfolio">
+                    <span class="icon">📂</span>
+                    Portföy
+                </a>
+                <a href="#" class="nav-item" data-section="process">
+                    <span class="icon">⚙️</span>
+                    Süreç
+                </a>
+                <a href="#" class="nav-item" data-section="testimonials">
+                    <span class="icon">💬</span>
+                    Yorumlar
+                </a>
+                <a href="#" class="nav-item" data-section="contact">
+                    <span class="icon">📧</span>
+                    İletişim Bilgileri
+                </a>
+                <a href="#" class="nav-item" data-section="stats">
+                    <span class="icon">📈</span>
+                    İstatistikler
+                </a>
+                <a href="#" class="nav-item" data-section="settings">
+                    <span class="icon">⚙️</span>
+                    Genel Ayarlar
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="index.html" class="btn-view-site" target="_blank">🌐 Siteyi Görüntüle</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1 id="page-title">Dashboard</h1>
+                <div class="top-actions">
+                    <button class="btn-save" id="saveChanges">💾 Değişiklikleri Kaydet</button>
+                    <button class="btn-export" id="exportData">📥 Verileri Dışa Aktar</button>
+                </div>
+            </header>
+
+            <div class="content-area">
+                <!-- Dashboard Section -->
+                <section id="section-dashboard" class="admin-section active">
+                    <div class="dashboard-cards">
+                        <div class="dash-card">
+                            <div class="card-icon">📄</div>
+                            <div class="card-info">
+                                <h3>5</h3>
+                                <p>Toplam Sayfa</p>
+                            </div>
+                        </div>
+                        <div class="dash-card">
+                            <div class="card-icon">📂</div>
+                            <div class="card-info">
+                                <h3>12</h3>
+                                <p>Portföy Projesi</p>
+                            </div>
+                        </div>
+                        <div class="dash-card">
+                            <div class="card-icon">🔧</div>
+                            <div class="card-info">
+                                <h3>9</h3>
+                                <p>Hizmet</p>
+                            </div>
+                        </div>
+                        <div class="dash-card">
+                            <div class="card-icon">💬</div>
+                            <div class="card-info">
+                                <h3>3</h3>
+                                <p>Müşteri Yorumu</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="welcome-message">
+                        <h2>Hoş Geldiniz!</h2>
+                        <p>ExpoCraft web sitenizin admin paneline hoş geldiniz. Sol menüden düzenlemek istediğiniz bölümü seçebilirsiniz.</p>
+                        <div class="quick-tips">
+                            <h3>💡 Hızlı İpuçları:</h3>
+                            <ul>
+                                <li>Her değişiklikten sonra "Değişiklikleri Kaydet" butonuna tıklayın</li>
+                                <li>Değişiklikler tarayıcınızın localStorage'ında saklanır</li>
+                                <li>"Siteyi Görüntüle" butonu ile değişikliklerinizi kontrol edin</li>
+                                <li>Verileri dışa aktararak yedek alabilirsiniz</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Hero Section -->
+                <section id="section-hero" class="admin-section">
+                    <h2>Ana Sayfa Hero Bölümü</h2>
+                    
+                    <div class="form-group">
+                        <label>Ana Başlık</label>
+                        <input type="text" id="hero-title" value="FUAR STANDLARINIZI HAYATA GEÇİRİYORUZ">
+                        <small>Vurgulu kelime için &lt;span&gt; etiketi kullanın</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Alt Başlık</label>
+                        <input type="text" id="hero-subtitle" value="Yaratıcı tasarım ve mükemmel uygulamayla markanızı öne çıkarın">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Birinci Buton Metni</label>
+                        <input type="text" id="hero-btn1" value="Teklif Alın">
+                    </div>
+
+                    <div class="form-group">
+                        <label>İkinci Buton Metni</label>
+                        <input type="text" id="hero-btn2" value="Projelerimiz">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Arka Plan Görseli URL</label>
+                        <input type="text" id="hero-bg" value="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80">
+                        <small>Unsplash veya kendi görsel URL'inizi kullanabilirsiniz</small>
+                    </div>
+                </section>
+
+                <!-- About Section -->
+                <section id="section-about" class="admin-section">
+                    <h2>Hakkımızda Bölümü</h2>
+                    
+                    <div class="form-group">
+                        <label>Bölüm Başlığı</label>
+                        <input type="text" id="about-title" value="HAKKIMIZDA">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Ön Paragraf (Lead)</label>
+                        <textarea id="about-lead" rows="2">15 yılı aşkın deneyimimizle, fuar sektöründe öncü bir konumdayız.</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Paragraf 1</label>
+                        <textarea id="about-p1" rows="3">ExpoCraft olarak, markaların fuar standlarında en iyi şekilde temsil edilmesini sağlıyoruz. Tasarımdan üretime, montajdan demontaja kadar tüm süreçleri yönetiyor, müşterilerimize anahtar teslim çözümler sunuyoruz.</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Paragraf 2</label>
+                        <textarea id="about-p2" rows="3">Ekibimiz, yaratıcı tasarımcılar, deneyimli mühendisler ve profesyonel montaj ekiplerinden oluşmaktadır. Her projede mükemmeliyeti hedefliyor, müşteri memnuniyetini ön planda tutuyoruz.</textarea>
+                    </div>
+
+                    <h3>Özellikler</h3>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <input type="text" placeholder="Özellik Başlığı" value="Profesyonel Ekip">
+                            <textarea placeholder="Açıklama" rows="2">Alanında uzman tasarımcı ve uygulayıcılar</textarea>
+                        </div>
+                        <div class="feature-item">
+                            <input type="text" placeholder="Özellik Başlığı" value="Kalite Garantisi">
+                            <textarea placeholder="Açıklama" rows="2">En yüksek standartlarda malzeme ve işçilik</textarea>
+                        </div>
+                        <div class="feature-item">
+                            <input type="text" placeholder="Özellik Başlığı" value="Zamanında Teslimat">
+                            <textarea placeholder="Açıklama" rows="2">Proje takvimlerine titizlikle uyum</textarea>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services Section -->
+                <section id="section-services" class="admin-section">
+                    <h2>Hizmetler</h2>
+                    <button class="btn-add" id="addService">+ Yeni Hizmet Ekle</button>
+                    
+                    <div id="services-list" class="items-list">
+                        <!-- Services will be dynamically loaded -->
+                    </div>
+                </section>
+
+                <!-- Portfolio Section -->
+                <section id="section-portfolio" class="admin-section">
+                    <h2>Portföy Projeleri</h2>
+                    <button class="btn-add" id="addProject">+ Yeni Proje Ekle</button>
+                    
+                    <div id="portfolio-list" class="items-list">
+                        <!-- Portfolio items will be dynamically loaded -->
+                    </div>
+                </section>
+
+                <!-- Process Section -->
+                <section id="section-process" class="admin-section">
+                    <h2>Çalışma Süreci</h2>
+                    
+                    <div id="process-list" class="items-list">
+                        <!-- Process steps will be dynamically loaded -->
+                    </div>
+                </section>
+
+                <!-- Testimonials Section -->
+                <section id="section-testimonials" class="admin-section">
+                    <h2>Müşteri Yorumları</h2>
+                    <button class="btn-add" id="addTestimonial">+ Yeni Yorum Ekle</button>
+                    
+                    <div id="testimonials-list" class="items-list">
+                        <!-- Testimonials will be dynamically loaded -->
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="section-contact" class="admin-section">
+                    <h2>İletişim Bilgileri</h2>
+                    
+                    <div class="form-group">
+                        <label>Adres</label>
+                        <textarea id="contact-address" rows="3">Atatürk Mahallesi, Fuar Caddesi No:123
+Şişli / İstanbul, 34000
+Türkiye</textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Ofis Telefonu</label>
+                            <input type="text" id="contact-phone1" value="+90 212 XXX XX XX">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobil Telefonu</label>
+                            <input type="text" id="contact-phone2" value="+90 555 XXX XX XX">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Genel E-posta</label>
+                            <input type="email" id="contact-email1" value="info@expocraft.com">
+                        </div>
+                        <div class="form-group">
+                            <label>Satış E-posta</label>
+                            <input type="email" id="contact-email2" value="satis@expocraft.com">
+                        </div>
+                    </div>
+
+                    <h3>Çalışma Saatleri</h3>
+                    <div class="form-group">
+                        <label>Hafta İçi</label>
+                        <input type="text" id="contact-hours-weekday" value="Pazartesi - Cuma: 09:00 - 18:00">
+                    </div>
+                    <div class="form-group">
+                        <label>Cumartesi</label>
+                        <input type="text" id="contact-hours-saturday" value="Cumartesi: 09:00 - 14:00">
+                    </div>
+
+                    <h3>Sosyal Medya</h3>
+                    <div class="form-group">
+                        <label>Facebook URL</label>
+                        <input type="text" id="social-facebook" value="https://facebook.com/expocraft">
+                    </div>
+                    <div class="form-group">
+                        <label>Instagram URL</label>
+                        <input type="text" id="social-instagram" value="https://instagram.com/expocraft">
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn URL</label>
+                        <input type="text" id="social-linkedin" value="https://linkedin.com/company/expocraft">
+                    </div>
+                </section>
+
+                <!-- Stats Section -->
+                <section id="section-stats" class="admin-section">
+                    <h2>İstatistikler</h2>
+                    
+                    <div class="stats-grid">
+                        <div class="form-group">
+                            <label>Tamamlanan Proje</label>
+                            <input type="text" id="stat-projects" value="500+">
+                        </div>
+                        <div class="form-group">
+                            <label>Yıllık Deneyim</label>
+                            <input type="text" id="stat-experience" value="15+">
+                        </div>
+                        <div class="form-group">
+                            <label>Mutlu Müşteri</label>
+                            <input type="text" id="stat-clients" value="250+">
+                        </div>
+                        <div class="form-group">
+                            <label>Müşteri Memnuniyeti</label>
+                            <input type="text" id="stat-satisfaction" value="%98">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="section-settings" class="admin-section">
+                    <h2>Genel Ayarlar</h2>
+                    
+                    <div class="form-group">
+                        <label>Site Adı</label>
+                        <input type="text" id="site-name" value="EXPOCRAFT">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Site Sloganı</label>
+                        <input type="text" id="site-slogan" value="Fuar Tasarım & Uygulama">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Footer Metni</label>
+                        <textarea id="footer-text" rows="2">Fuar standlarınızı profesyonelce tasarlıyor ve uyguluyoruz.</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Copyright Metni</label>
+                        <input type="text" id="copyright-text" value="© 2026 ExpoCraft - Tüm Hakları Saklıdır">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tema Rengi (Primary)</label>
+                        <input type="color" id="color-primary" value="#1a1a1a">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Vurgu Rengi (Secondary)</label>
+                        <input type="color" id="color-secondary" value="#e74c3c">
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
