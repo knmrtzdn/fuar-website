@@ -1,0 +1,84 @@
+{
+  "hero": {
+    "title": "FUAR STANDLARINIZI HAYATA GEÇİRİYORUzz",
+    "subtitle": "Yaratıcı tasarım ve mükemmel uygulamayla markanızı öne çıkarın",
+    "btn1": "Teklif Alın",
+    "btn2": "Projelerimiz",
+    "background": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+  },
+  "services": [
+    {
+      "id": 1,
+      "icon": "📐",
+      "title": "Konsept ve Tasarım",
+      "description": "Markanızın kimliğini yansıtan, etkileyici ve işlevsel stand tasarımları oluşturuyoruz."
+    },
+    {
+      "id": 2,
+      "icon": "🏗️",
+      "title": "Üretim ve Uygulama",
+      "description": "En kaliteli malzemelerle, deneyimli ekibimiz tarafından zamanında ve kusursuz montaj hizmeti sunuyoruz."
+    },
+    {
+      "id": 3,
+      "icon": "💡",
+      "title": "Anahtar Teslim Çözümler",
+      "description": "Tasarımdan montaja, dekorasyon ve demontaja kadar tüm süreçleri yönetiyoruz."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1,
+      "category": "teknoloji",
+      "title": "TechVision 2025",
+      "size": "300 m²",
+      "location": "İstanbul Fuar Merkezi",
+      "description": "Modern ve minimalist tasarım yaklaşımı"
+    },
+    {
+      "id": 2,
+      "category": "otomotiv",
+      "title": "AutoExpo Premium",
+      "size": "450 m²",
+      "location": "İzmir Fuar Alanı",
+      "description": "Lüks otomotiv standı"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "ExpoCraft ile çalışmak harika bir deneyimdi. Tasarımdan uygulamaya kadar her aşamada profesyonelliklerini gördük.",
+      "author": "Ahmet Yılmaz",
+      "position": "TechVision CEO"
+    },
+    {
+      "id": 2,
+      "text": "3 farklı fuarda birlikte çalıştık. Her seferinde beklentilerimizi aşan sonuçlar aldık.",
+      "author": "Elif Demir",
+      "position": "AutoExpo Pazarlama Müdürü"
+    }
+  ],
+  "stats": {
+    "projects": "500+",
+    "experience": "15+",
+    "clients": "250+",
+    "satisfaction": "%98"
+  },
+  "contact": {
+    "address": "Atatürk Mahallesi, Fuar Caddesi No:123\nŞişli / İstanbul, 34000\nTürkiye",
+    "phone1": "+90 212 XXX XX XX",
+    "phone2": "+90 555 XXX XX XX",
+    "email1": "info@expocraft.com",
+    "email2": "satis@expocraft.com",
+    "hoursWeekday": "Pazartesi - Cuma: 09:00 - 18:00",
+    "hoursSaturday": "Cumartesi: 09:00 - 14:00"
+  },
+  "settings": {
+    "siteName": "EXPOCRAFT",
+    "siteSlogan": "Fuar Tasarım & Uygulama",
+    "footerText": "Fuar standlarınızı profesyonelce tasarlıyor ve uyguluyoruz.",
+    "copyright": "© 2026 ExpoCraft - Tüm Hakları Saklıdır",
+    "colorPrimary": "#1a1a1a",
+    "colorSecondary": "#e74c3c"
+  }
+}
