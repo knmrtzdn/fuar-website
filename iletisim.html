@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - EXPOCRAFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">EXPO<span>CRAFT</span></div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="portfolyo.html">Portföy</a></li>
+                <li><a href="surec.html">Süreç</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>İLETİŞİM</h1>
+            <p>Projeniz için bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="contact-container">
+            <div class="contact-info fade-in">
+                <h2>İLETİŞİM BİLGİLERİ</h2>
+                <p class="contact-lead">Fuar projeleriniz için bize ulaşın. Uzman ekibimiz size en kısa sürede dönüş yapacaktır.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Atatürk Mahallesi, Fuar Caddesi No:123<br>Şişli / İstanbul, 34000<br>Türkiye</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p><strong>Ofis:</strong> +90 212 XXX XX XX<br>
+                        <strong>Mobil:</strong> +90 555 XXX XX XX<br>
+                        <strong>Whatsapp:</strong> +90 555 XXX XX XX</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h4>E-posta</h4>
+                        <p><strong>Genel:</strong> info@expocraft.com<br>
+                        <strong>Satış:</strong> satis@expocraft.com<br>
+                        <strong>Destek:</strong> destek@expocraft.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <h4>Çalışma Saatleri</h4>
+                        <p><strong>Pazartesi - Cuma:</strong> 09:00 - 18:00<br>
+                        <strong>Cumartesi:</strong> 09:00 - 14:00<br>
+                        <strong>Pazar:</strong> Kapalı</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📘 Facebook</a>
+                        <a href="#" class="social-icon">📸 Instagram</a>
+                        <a href="#" class="social-icon">💼 LinkedIn</a>
+                        <a href="#" class="social-icon">▶️ YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-section fade-in">
+                <h2>BİZE YAZIN</h2>
+                <p>Formunu doldurun, size en kısa sürede geri dönelim</p>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Firma Adı</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefon Numaranız *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Hizmet Türü</label>
+                        <select id="service" name="service">
+                            <option value="">Seçiniz</option>
+                            <option value="tasarim">Stand Tasarım</option>
+                            <option value="uretim">Üretim ve Uygulama</option>
+                            <option value="anahtar-teslim">Anahtar Teslim Çözüm</option>
+                            <option value="grafik">Grafik Tasarım</option>
+                            <option value="danismanlik">Danışmanlık</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="fair">Fuar Bilgisi</label>
+                        <input type="text" id="fair" name="fair" placeholder="Fuar adı ve tarihi">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Bütçe Aralığı</label>
+                        <select id="budget" name="budget">
+                            <option value="">Seçiniz</option>
+                            <option value="0-50k">0 - 50.000 TL</option>
+                            <option value="50-100k">50.000 - 100.000 TL</option>
+                            <option value="100-200k">100.000 - 200.000 TL</option>
+                            <option value="200k+">200.000 TL+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mesajınız *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Projeniz hakkında detaylı bilgi verin..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" name="consent" required>
+                            <span>KVKK kapsamında kişisel verilerimin işlenmesini kabul ediyorum.</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-placeholder">
+            <div class="map-content">
+                <h3>📍 OFİSİMİZ</h3>
+                <p>Atatürk Mahallesi, Fuar Caddesi No:123<br>Şişli / İstanbul</p>
+                <p class="map-note">Harita entegrasyonu için Google Maps API kullanılabilir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Info -->
+    <section class="additional-info">
+        <div class="info-grid">
+            <div class="info-card fade-in">
+                <div class="info-icon">🚗</div>
+                <h3>Ulaşım</h3>
+                <p>Ofisimize toplu taşıma ile kolayca ulaşabilirsiniz. Yakınlarda metro ve otobüs durakları bulunmaktadır.</p>
+            </div>
+            
+            <div class="info-card fade-in">
+                <div class="info-icon">🅿️</div>
+                <h3>Otopark</h3>
+                <p>Ziyaretçilerimiz için ücretsiz otopark imkanı mevcuttur. Binaya ait kapalı otopark alanımız bulunmaktadır.</p>
+            </div>
+            
+            <div class="info-card fade-in">
+                <div class="info-icon">☕</div>
+                <h3>Showroom Ziyareti</h3>
+                <p>Ofisimizde geçmiş projelerimizi inceleyebilir, malzeme örneklerini görebilirsiniz. Randevu alınız.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick Links -->
+    <section class="faq-quick">
+        <div class="faq-quick-content fade-in">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <div class="faq-links">
+                <a href="surec.html#faq" class="faq-link">
+                    <span class="faq-question">❓ Proje için minimum ne kadar süre gerekli?</span>
+                </a>
+                <a href="surec.html#faq" class="faq-link">
+                    <span class="faq-question">❓ Yurt dışı fuarlarda da hizmet veriyor musunuz?</span>
+                </a>
+                <a href="surec.html#faq" class="faq-link">
+                    <span class="faq-question">❓ Tasarım değişiklikleri ücretli mi?</span>
+                </a>
+                <a href="surec.html" class="btn btn-secondary">Tüm Soruları Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">EXPO<span>CRAFT</span></div>
+                <p>Fuar standlarınızı profesyonelce tasarlıyor ve uyguluyoruz.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li><a href="portfolyo.html">Portföy</a></li>
+                    <li><a href="surec.html">Süreç</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>📍 Atatürk Mah. Fuar Cad. No:123<br>Şişli / İstanbul</p>
+                <p>📞 +90 212 XXX XX XX</p>
+                <p>✉️ info@expocraft.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ExpoCraft - Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

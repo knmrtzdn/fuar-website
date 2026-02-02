@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portföy - EXPOCRAFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">EXPO<span>CRAFT</span></div>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="portfolyo.html" class="active">Portföy</a></li>
+                <li><a href="surec.html">Süreç</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>PORTFÖYÜMÜZ</h1>
+            <p>Başarıyla tamamladığımız projelerden seçmeler</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Intro -->
+    <section class="portfolio-intro">
+        <div class="portfolio-intro-content fade-in">
+            <h2>500+ Başarılı Proje</h2>
+            <p>15 yılı aşkın deneyimimizle, Türkiye'nin ve dünyanın dört bir yanındaki fuarlarda yüzlerce markaya hizmet verdik. Her proje, müşterilerimizin beklentilerini aşan yaratıcı çözümler ve mükemmel uygulama kalitesiyle hayata geçirildi.</p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="portfolio-filters">
+        <div class="filter-buttons fade-in">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="teknoloji">Teknoloji</button>
+            <button class="filter-btn" data-filter="otomotiv">Otomotiv</button>
+            <button class="filter-btn" data-filter="gida">Gıda & İçecek</button>
+            <button class="filter-btn" data-filter="insaat">İnşaat</button>
+            <button class="filter-btn" data-filter="mobilya">Mobilya</button>
+            <button class="filter-btn" data-filter="tekstil">Tekstil</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-page">
+        <div class="portfolio-grid">
+            <!-- Teknoloji Projects -->
+            <div class="portfolio-item fade-in" data-category="teknoloji">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">💻</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Teknoloji</span>
+                    <h3>TechVision 2025</h3>
+                    <p>300 m² | İstanbul Fuar Merkezi</p>
+                    <div class="portfolio-details">
+                        <p>Modern ve minimalist tasarım yaklaşımıyla, LED ekran sistemleri ve interaktif demo alanları içeren kapsamlı stand projesi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="teknoloji">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🤖</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Teknoloji</span>
+                    <h3>AI Summit Stand</h3>
+                    <p>250 m² | Berlin Messe</p>
+                    <div class="portfolio-details">
+                        <p>Yapay zeka temalı futuristik tasarım, holografik gösterim alanları ve VR deneyim noktaları ile donatılmış özel proje.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otomotiv Projects -->
+            <div class="portfolio-item fade-in" data-category="otomotiv">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🚗</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Otomotiv</span>
+                    <h3>AutoExpo Premium</h3>
+                    <p>450 m² | İzmir Fuar Alanı</p>
+                    <div class="portfolio-details">
+                        <p>3 araç sergileme alanı, VIP lounge ve test sürüşü koordinasyon merkezi içeren lüks otomotiv standı.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="otomotiv">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">⚡</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Otomotiv</span>
+                    <h3>ElectroMobility</h3>
+                    <p>380 m² | Frankfurt Messe</p>
+                    <div class="portfolio-details">
+                        <p>Elektrikli araçlar için sürdürülebilir malzemelerle tasarlanmış, şarj istasyonu demo alanı içeren çevre dostu stand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gıda Projects -->
+            <div class="portfolio-item fade-in" data-category="gida">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🍽️</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Gıda & İçecek</span>
+                    <h3>Gastronomi Fuarı</h3>
+                    <p>250 m² | Antalya Expo</p>
+                    <div class="portfolio-details">
+                        <p>Canlı mutfak gösterisi alanı, tadım bölümleri ve premium ürün sergileme alanları ile donatılmış gastronomi standı.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="gida">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">☕</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Gıda & İçecek</span>
+                    <h3>Coffee World</h3>
+                    <p>180 m² | Dubai World Trade Center</p>
+                    <div class="portfolio-details">
+                        <p>Kahve kültürü temalı, barista gösterim alanı ve aromalı deneyim bölümleri içeren butik stand tasarımı.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- İnşaat Projects -->
+            <div class="portfolio-item fade-in" data-category="insaat">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🏗️</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">İnşaat</span>
+                    <h3>BuildTech Expo</h3>
+                    <p>500 m² | İstanbul CNR</p>
+                    <div class="portfolio-details">
+                        <p>İnşaat sektörü için endüstriyel tasarım, maket sergileme alanları ve toplantı odaları içeren mega stand projesi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="insaat">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🏠</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">İnşaat</span>
+                    <h3>Smart Home Solutions</h3>
+                    <p>320 m² | Milano Fiera</p>
+                    <div class="portfolio-details">
+                        <p>Akıllı ev sistemleri için canlı demo odası, teknoloji entegrasyon alanları ve danışmanlık bölümleri.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobilya Projects -->
+            <div class="portfolio-item fade-in" data-category="mobilya">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🪑</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Mobilya</span>
+                    <h3>Design Furniture Expo</h3>
+                    <p>350 m² | CNR Expo İstanbul</p>
+                    <div class="portfolio-details">
+                        <p>Showroom konseptinde, farklı yaşam alanları temasıyla düzenlenmiş, ürün sergileme odaklı estetik stand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="mobilya">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🛋️</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Mobilya</span>
+                    <h3>Luxury Living</h3>
+                    <p>280 m² | Paris Expo Porte de Versailles</p>
+                    <div class="portfolio-details">
+                        <p>Lüks mobilya koleksiyonu için premium malzemeler ve aydınlatma ile vurgulanmış sofistike stand tasarımı.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tekstil Projects -->
+            <div class="portfolio-item fade-in" data-category="tekstil">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">👔</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Tekstil</span>
+                    <h3>Fashion Forward</h3>
+                    <p>280 m² | İstanbul Fuar Merkezi</p>
+                    <div class="portfolio-details">
+                        <p>Moda ve tekstil için podyum alanı, koleksiyon sergileme duvarları ve VIP görüşme odaları içeren şık stand.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item fade-in" data-category="tekstil">
+                <div class="portfolio-image">
+                    <div class="image-placeholder">
+                        <div class="placeholder-icon">🧵</div>
+                    </div>
+                </div>
+                <div class="portfolio-info">
+                    <span class="portfolio-category">Tekstil</span>
+                    <h3>Textile Innovation</h3>
+                    <p>220 m² | Milano Fashion Fair</p>
+                    <div class="portfolio-details">
+                        <p>Yenilikçi kumaş teknolojileri için interaktif dokunma duvarları ve ürün test alanları içeren modern stand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title fade-in">MÜŞTERİLERİMİZ NE DİYOR?</h2>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="quote-icon">"</div>
+                <p>ExpoCraft ile çalışmak harika bir deneyimdi. Tasarımdan uygulamaya kadar her aşamada profesyonelliklerini gördük. Fuarda standımız tüm dikkatleri üzerine çekti!</p>
+                <div class="testimonial-author">
+                    <strong>Ahmet Yılmaz</strong>
+                    <span>TechVision CEO</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="quote-icon">"</div>
+                <p>3 farklı fuarda birlikte çalıştık. Her seferinde beklentilerimizi aşan sonuçlar aldık. Ekip çok deneyimli ve çözüm odaklı. Kesinlikle tavsiye ederim.</p>
+                <div class="testimonial-author">
+                    <strong>Elif Demir</strong>
+                    <span>AutoExpo Pazarlama Müdürü</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="quote-icon">"</div>
+                <p>Yurt dışı fuarda ilk kez çalışacağımız için endişeliydik. ExpoCraft tüm süreci mükemmel yönetti. Lojistikten montaja kadar her şey kusursuzdu.</p>
+                <div class="testimonial-author">
+                    <strong>Mehmet Kaya</strong>
+                    <span>BuildTech Genel Müdür</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content fade-in">
+            <h2>Siz de Başarı Hikayemizin Parçası Olun</h2>
+            <p>Projeniz için görüşelim ve sizin için de mükemmel bir stand tasarlayalım</p>
+            <a href="iletisim.html" class="btn btn-primary">Projenizi Konuşalım</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">EXPO<span>CRAFT</span></div>
+                <p>Fuar standlarınızı profesyonelce tasarlıyor ve uyguluyoruz.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li><a href="portfolyo.html">Portföy</a></li>
+                    <li><a href="surec.html">Süreç</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>İletişim</h4>
+                <p>📍 Atatürk Mah. Fuar Cad. No:123<br>Şişli / İstanbul</p>
+                <p>📞 +90 212 XXX XX XX</p>
+                <p>✉️ info@expocraft.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ExpoCraft - Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
